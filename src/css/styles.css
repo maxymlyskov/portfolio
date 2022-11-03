@@ -45,10 +45,12 @@ h1 {
 }
 h2 {
   font-size: 4rem;
+  color: #d7daf0;
 }
 h3 {
   font-size: 3rem;
   font-weight: 500;
+  color: #5f6ec0;
 }
 p {
   margin-top: 0;
@@ -88,13 +90,27 @@ a:link {
   height: 4rem;
   background: var(--color-border);
 }
-.app {
+.bg {
   background: rgb(25, 23, 82);
   background: linear-gradient(
     144deg,
     rgba(25, 23, 82, 1) 65%,
     rgba(53, 17, 78, 1) 75%
   );
+}
+.app {
+  position: relative;
+  height: 100vh;
+}
+.social-links {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 1rem;
+  right: 2rem;
+}
+.social-links {
+  color: red;
 }
 /* Buttons */
 .btn {
@@ -160,11 +176,7 @@ a:link {
 /* Navigation Container */
 .nav {
   background: rgb(25, 23, 82);
-  background: linear-gradient(
-    144deg,
-    rgba(25, 23, 82, 1) 65%,
-    rgba(53, 17, 78, 1) 75%
-  );
+
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -207,4 +219,91 @@ a:link {
     padding: 0;
     margin-right: 0;
   }
+}
+/* Main Title */
+.main-title--container {
+  margin: 2rem;
+}
+.main-title--container > h2 {
+  text-align: center;
+}
+.main-title--container > h3 {
+  margin: 2rem;
+  margin-bottom: 3rem;
+}
+.main-title--container > h3 > a {
+  text-decoration: underline;
+}
+@media screen and (min-width: 1024px) {
+  .main-title--container {
+    margin: 15vh;
+  }
+  .main-title--container > h2 {
+    text-align: left;
+  }
+  .main-title--container > h3 {
+    line-height: 4rem;
+    margin: 4rem 25rem;
+  }
+}
+/* About */
+
+.about {
+  padding: 2rem 0;
+  text-align: center;
+}
+.img__about {
+  margin: 2rem 5rem;
+  width: 20rem;
+}
+.about--title {
+  color: #d7daf0;
+}
+.about-mark {
+  width: 100%;
+  background: #f7393f;
+  padding: 3rem;
+  margin-top: 5rem;
+}
+.about-mark > h4 {
+  text-align: center;
+  color: #d7daf0;
+  font-weight: 400;
+}
+.about-mark > h5 {
+  text-align: center;
+  color: rgb(70, 62, 62);
+  font-weight: 400;
+  font-size: 2rem;
+  padding: -1rem;
+}
+
+.align-left {
+  text-align: left;
+}
+.about--bio {
+  padding: 1.5rem;
+  padding-bottom: 3rem;
+}
+.about--bio > h3 {
+  font-size: 2.2rem;
+}
+.about--bio > h3 > u {
+  color: #d7daf0;
+}
+.about--list {
+  list-style-type: circle;
+}
+.about--list > li {
+  text-decoration: underline;
+  text-align: left;
+  color: #d7daf0;
+}
+.about--list-title {
+  text-align: left;
+  padding-left: 2rem;
+  color: #c5d62b;
+}
+.about > h1 {
+  color: #d7daf0;
 }
