@@ -1,25 +1,11 @@
 import React from "react";
 import AboutList from "../components/AboutList";
+import AboutSkills from "../components/AboutSkills";
 import AboutMark from "../components/AboutMark";
+import AboutEducation from "../components/AboutEducation";
 
 function About() {
-  const frontEnd = [
-    "HTML5",
-    "CSS3",
-    "JavaScript",
-    "Typescript",
-    "React",
-    "React Native",
-    "Redux",
-  ];
-  const backEnd = ["Node JS", "Express", "MongoDB"];
-  const SCM = ["Git"];
-  const other = [
-    "OOP usage",
-    "Fast Learner",
-    "Strong Analytical Skills",
-    "Fluent in English",
-  ];
+  const univ = ["Taras Shevchenko National University of Kyiv"];
   return (
     <div className=" bg about">
       <h3 className="about--title">Hi, my name is Maxym</h3>
@@ -45,14 +31,9 @@ function About() {
           <u>write code cleaner</u> every time I get to work.
         </h3>
       </div>
-      <h1>Skills</h1>
-      <div className="about--list-container">
-        <AboutList title="Front-end" listItems={frontEnd} />
-        <AboutList title="Back-end" listItems={backEnd} />
-        <AboutList title="SCM" listItems={SCM} />
-        <AboutList title="Other" listItems={other} />
-      </div>
+      <AboutSkills />
       <AboutMark />
+      <AboutEducation />
     </div>
   );
 }

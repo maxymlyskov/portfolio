@@ -307,6 +307,25 @@ a:link {
 .about > h1 {
   color: #d7daf0;
 }
+.about--education {
+  text-align: left;
+  padding: 1rem 2rem;
+}
+.about--education p {
+  color: #c5d62b;
+  margin-bottom: -3rem;
+  font-weight: 400;
+  margin-top: 1.5rem;
+}
+.about--education h5 {
+  font-weight: 400;
+  color: rgb(131, 109, 109);
+}
+.about--education h4 {
+  color: #d7daf0;
+  font-weight: 400;
+  margin-bottom: -2rem;
+}
 @media screen and (min-width: 1024px) {
   .img__about {
     width: 35rem;
@@ -321,12 +340,34 @@ a:link {
     padding: 2rem 10rem;
   }
   .about-mark > h4 {
-    font-size: 2rem;
+    font-size: 3rem;
   }
   .about-mark > h5 {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
   .about-mark {
     padding: 8rem 0;
+  }
+  .about--education-up {
+    display: flex;
+    flex-direction: row;
+  }
+  .about--education {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 3rem;
+  }
+  .about--education p {
+    font-size: 2.5rem;
+  }
+  .about--education h5 {
+    font-size: 2.5rem;
+  }
+  .about--education h4 {
+    margin-top: 1rem;
+    margin-left: 1rem;
+    font-size: 3rem;
   }
 }
