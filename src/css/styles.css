@@ -307,3 +307,26 @@ a:link {
 .about > h1 {
   color: #d7daf0;
 }
+@media screen and (min-width: 1024px) {
+  .img__about {
+    width: 35rem;
+  }
+  .about--title {
+    font-size: 5rem;
+  }
+  .about--list-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem 10rem;
+  }
+  .about-mark > h4 {
+    font-size: 2rem;
+  }
+  .about-mark > h5 {
+    font-size: 3rem;
+  }
+  .about-mark {
+    padding: 8rem 0;
+  }
+}

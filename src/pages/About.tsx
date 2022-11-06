@@ -46,10 +46,12 @@ function About() {
         </h3>
       </div>
       <h1>Skills</h1>
-      <AboutList title="Front-end" listItems={frontEnd} />
-      <AboutList title="Back-end" listItems={backEnd} />
-      <AboutList title="SCM" listItems={SCM} />
-      <AboutList title="Other" listItems={other} />
+      <div className="about--list-container">
+        <AboutList title="Front-end" listItems={frontEnd} />
+        <AboutList title="Back-end" listItems={backEnd} />
+        <AboutList title="SCM" listItems={SCM} />
+        <AboutList title="Other" listItems={other} />
+      </div>
       <AboutMark />
     </div>
   );
