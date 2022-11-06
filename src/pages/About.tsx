@@ -1,11 +1,11 @@
 import React from "react";
-import AboutList from "../components/AboutList";
+
 import AboutSkills from "../components/AboutSkills";
 import AboutMark from "../components/AboutMark";
 import AboutEducation from "../components/AboutEducation";
+import AboutProjects from "../components/AboutProjects";
 
 function About() {
-  const univ = ["Taras Shevchenko National University of Kyiv"];
   return (
     <div className=" bg about">
       <h3 className="about--title">Hi, my name is Maxym</h3>
@@ -34,6 +34,8 @@ function About() {
       <AboutSkills />
       <AboutMark />
       <AboutEducation />
+
+      <AboutProjects />
     </div>
   );
 }

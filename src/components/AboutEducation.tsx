@@ -1,6 +1,6 @@
 function AboutEducation() {
   return (
-    <div>
+    <>
       <h1>Education</h1>
       <div className="about--education">
         <div className="about--education-up">
@@ -11,7 +11,7 @@ function AboutEducation() {
           Taras Shevchenko National University of <u>Kyiv</u>
         </h5>
       </div>
-    </div>
+    </>
   );
 }
 
