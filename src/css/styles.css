@@ -151,6 +151,9 @@ a:link {
   color: var(--color-headings);
   transition: background 0.15s, color 0.15s;
 }
+.btn--about {
+  width: 80%;
+}
 .btn--outline:hover {
   background: var(--color-headings);
   color: white;
@@ -219,6 +222,9 @@ a:link {
     padding: 0;
     margin-right: 0;
   }
+  .btn--about {
+    width: 30%;
+  }
 }
 /* Main Title */
 .main-title--container {
@@ -265,6 +271,9 @@ a:link {
   padding: 3rem;
   margin-top: 5rem;
 }
+.about-mark-end {
+  background: rgb(54, 53, 131);
+}
 .about-mark > h4 {
   text-align: center;
   color: #d7daf0;
@@ -276,6 +285,9 @@ a:link {
   font-weight: 400;
   font-size: 2rem;
   padding: -1rem;
+}
+.about-mark-end h5 {
+  color: rgb(154, 141, 212);
 }
 
 .align-left {
@@ -302,7 +314,7 @@ a:link {
 .about--list-title {
   text-align: left;
   padding-left: 2rem;
-  color: #c5d62b;
+  color: #5f6ec0;
 }
 .about > h1 {
   color: #d7daf0;
@@ -312,7 +324,7 @@ a:link {
   padding: 1rem 2rem;
 }
 .about--education p {
-  color: #c5d62b;
+  color: #5f6ec0;
   margin-bottom: -3rem;
   font-weight: 400;
   margin-top: 1.5rem;
@@ -359,6 +371,21 @@ a:link {
   margin: 0.5rem;
   font-size: 1.3rem;
 }
+.about--end {
+  padding: 1rem 5%;
+}
+.about--end .btn {
+  width: 70%;
+  height: 70%;
+}
+.about--end h3 {
+  color: #d7daf0;
+  font-weight: 400;
+  padding: 1rem 0;
+}
+.about--end h3 u {
+  color: #5f6ec0;
+}
 
 @media screen and (min-width: 1024px) {
   .img__about {
@@ -403,5 +430,37 @@ a:link {
     margin-top: 1rem;
     margin-left: 1rem;
     font-size: 3rem;
+  }
+  .about--technologie {
+    font-size: 2rem;
+  }
+  .about--project h3 {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+  }
+  .about--project h5 {
+    font-size: 2.5rem;
+  }
+  .about--end .btn {
+    width: 20%;
+    height: 20%;
+  }
+}
+/* Footer */
+footer {
+  background: transparent;
+  text-align: center;
+  margin-top: 4rem;
+  border-top: 1px solid #5f6ec0;
+  padding: 2rem 0;
+}
+footer h5 {
+  font-weight: 300;
+  margin: 0.5rem 0;
+  color: #5f6ec0;
+}
+@media screen and (min-width: 1024px) {
+  footer h5 {
+    font-size: 2rem;
   }
 }
