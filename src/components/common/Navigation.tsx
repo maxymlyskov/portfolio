@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import useWindowDimensions from "../../hooks/useWindowDimensions";
 import HumanGreetingProximityIcon from "mdi-react/HumanGreetingProximityIcon";
-import Button from "./Button";
 
 interface NavigationProps {
   children: JSX.Element[] | JSX.Element;
