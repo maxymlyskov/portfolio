@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import useWindowDimensions from "../../hooks/useWindowDimensions";
 import HumanGreetingProximityIcon from "mdi-react/HumanGreetingProximityIcon";
+import { Link } from "react-router-dom";
 
 interface NavigationProps {
   children: JSX.Element[] | JSX.Element;
@@ -29,9 +30,11 @@ const Navigation: React.FC<NavigationProps> = ({
           </div>
         </a>
         <div className="line"></div>
-        <button className="btn btn--primary btn--outline btn--block btn--large btn--nav">
-          About
-        </button>
+        <Link to="about">
+          <button className="btn btn--primary btn--outline btn--block btn--large btn--nav">
+            About
+          </button>
+        </Link>
       </div>
       {width <= 768 && (
         <HumanGreetingProximityIcon

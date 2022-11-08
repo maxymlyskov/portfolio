@@ -5,26 +5,33 @@ import AboutProjects from "../components/about/AboutProjects";
 import AboutWelcome from "../components/about/AboutWelcome";
 import Button from "../components/common/Button";
 import Footer from "../components/Footer";
+import { Link } from "react-router-dom";
 
 function About() {
   return (
-    <div className=" bg about">
+    <div className=" bg page">
       <AboutWelcome />
       <AboutSkills />
-      <AboutMark />
+      <AboutMark
+        title="My passion is make simple, quick and productive code."
+        subTitle="I enjoy improve my knowledge every project I do."
+      />
+
       <AboutEducation />
       <AboutProjects />
-      <div className="about-mark about-mark-end ">
-        <h4> My passion is make simple, quick and productive code.</h4>
-        <h5>
-          I enjoy <u>improve</u> my knowledge every project I do.{" "}
-        </h5>
-      </div>
+      <AboutMark
+        title="“Nature is pleased with simplicity.”"
+        subTitle="Isaac Newton"
+        blue
+      />
+
       <div className="about--end">
         <h3>
           I am <u>so excited</u> to be hired exactly by you.
         </h3>
-        <Button title="Contact" />
+        <Link to="/contact">
+          <Button title="Contact" />
+        </Link>
       </div>
       <Footer />
     </div>

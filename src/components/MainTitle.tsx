@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function MainTitle() {
   return (
     <div className="main-title--container">
@@ -5,7 +7,7 @@ function MainTitle() {
       <h3>
         You come up with something - I do it in the better possible way. React,
         React Native, Node JS, check out what you are intersting on the{" "}
-        <a href="/">about page</a>
+        <Link to="/about">about page</Link>
       </h3>
     </div>
   );

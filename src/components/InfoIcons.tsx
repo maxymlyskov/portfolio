@@ -24,13 +24,13 @@ function InfoIcons() {
               href={social[i].url}
               target="_blank"
               rel="noreferrer"
-              className="social-link"
+              className="social-link color"
             >
               <img
                 src={social[i].img}
                 width={size}
                 height={size}
-                alt="info icon"
+                alt="info icon "
               />
             </a>
           );

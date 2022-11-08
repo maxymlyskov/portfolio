@@ -65,6 +65,9 @@ ul {
 a:link {
   text-decoration: none;
 }
+a:active {
+  color: #6e1273;
+}
 
 @media screen and (min-width: 1024px) {
   body {
@@ -254,7 +257,7 @@ a:link {
 }
 /* About */
 
-.about {
+.page {
   padding: 2rem 0;
   text-align: center;
 }
@@ -293,6 +296,10 @@ a:link {
 .align-left {
   text-align: left;
 }
+.center {
+  display: flex;
+  justify-content: center;
+}
 .about--bio {
   padding: 1.5rem;
   padding-bottom: 3rem;
@@ -316,7 +323,7 @@ a:link {
   padding-left: 2rem;
   color: #5f6ec0;
 }
-.about > h1 {
+.page > h1 {
   color: #d7daf0;
 }
 .about--education {
@@ -401,6 +408,7 @@ a:link {
 }
 .about--title-container a {
   margin-top: 3rem;
+  margin-left: 1rem;
 }
 @media screen and (min-width: 1024px) {
   .about--title-container {
@@ -480,5 +488,74 @@ footer h5 {
 @media screen and (min-width: 1024px) {
   footer h5 {
     font-size: 2rem;
+  }
+}
+/* Contact */
+.contact--bottom {
+  padding: 1rem 1.5rem;
+}
+.contact--bottom h3 {
+  padding-bottom: 3rem;
+}
+form {
+}
+form div input,
+form div textarea {
+  border-radius: 1rem;
+  border: 1px solid #6e1273;
+  background: transparent;
+  padding: 1rem;
+  color: #5f6ec0;
+  padding-left: 2rem;
+  margin: 1.6rem;
+}
+form div textarea {
+  width: 84%;
+}
+form .btn {
+  width: 40%;
+}
+::placeholder {
+  color: #5f6ec0;
+  font-weight: 400;
+}
+.all {
+  height: 100vh;
+}
+@media screen and (min-width: 1024px) {
+  form {
+    text-align: left;
+    padding-left: 4rem;
+    padding-top: 2rem;
+  }
+  form div input {
+    width: 100%;
+  }
+  form div textarea {
+    width: 100%;
+  }
+  form .btn {
+    width: 40%;
+    margin-left: 31%;
+  }
+  .contact--bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .contact--bottom h3 {
+    font-size: 4rem;
+    padding-left: 1rem;
+    padding-bottom: 2rem;
+  }
+}
+/* Grid */
+.grid {
+  display: grid;
+}
+@media screen and (min-width: 1024px) {
+  .grid--1x2 {
+    grid-template-columns: repeat(2, 1fr);
   }
 }

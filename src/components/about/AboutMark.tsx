@@ -1,12 +1,14 @@
 import React from "react";
-
-function AboutMark() {
+interface AboutMarkProps {
+  title: string;
+  subTitle: string;
+  blue?: boolean;
+}
+function AboutMark({ title, subTitle, blue }: AboutMarkProps) {
   return (
-    <div className="about-mark">
-      <h4> My passion is make simple, quick and productive code.</h4>
-      <h5>
-        I enjoy <u>improve</u> my knowledge every project I do.{" "}
-      </h5>
+    <div className={blue ? "about-mark about-mark-end" : "about-mark"}>
+      <h4>{title} </h4>
+      <h5>{subTitle}</h5>
     </div>
   );
 }
