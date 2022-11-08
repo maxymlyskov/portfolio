@@ -1,8 +1,8 @@
-import AboutSkills from "../components/AboutSkills";
-import AboutMark from "../components/AboutMark";
-import AboutEducation from "../components/AboutEducation";
-import AboutProjects from "../components/AboutProjects";
-import AboutWelcome from "../components/AboutWelcome";
+import AboutSkills from "../components/about/AboutSkills";
+import AboutMark from "../components/about/AboutMark";
+import AboutEducation from "../components/about/AboutEducation";
+import AboutProjects from "../components/about/AboutProjects";
+import AboutWelcome from "../components/about/AboutWelcome";
 import Button from "../components/common/Button";
 import Footer from "../components/Footer";
 

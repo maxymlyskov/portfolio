@@ -6,7 +6,7 @@ function AboutWelcome() {
       <h3 className="about--title">Hi, my name is Maxym</h3>
       <div className="img__container">
         <img
-          src={require("../images/nav.jpg")}
+          src={require("../../images/nav.jpg")}
           alt="Maxym`s image"
           className="img__round img__about"
         />

@@ -386,8 +386,26 @@ a:link {
 .about--end h3 u {
   color: #5f6ec0;
 }
-
+.color {
+  filter: opacity(0.15) drop-shadow(0 0 0 #d7daf0);
+  outline: none;
+}
+.about--title-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.about--title-container h3 {
+  margin-right: 2rem;
+}
+.about--title-container a {
+  margin-top: 3rem;
+}
 @media screen and (min-width: 1024px) {
+  .about--title-container {
+    justify-content: left;
+  }
   .img__about {
     width: 35rem;
   }

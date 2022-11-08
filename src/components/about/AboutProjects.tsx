@@ -1,10 +1,16 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import ReactPlayer from "react-player/youtube";
-import AboutTechnologies from "../components/AboutTechnologies";
+import useWindowDimensions from "../../hooks/useWindowDimensions";
 import AboutProject from "./AboutProject";
 
 function AboutProjects() {
   const [showPast, setShowPast] = useState(false);
+  const [toggle, setToggle] = useState(false);
+  let { width } = useWindowDimensions();
+
+  useEffect(() => {
+    width >= 768 ? setToggle(true) : setToggle(false);
+  }, [width]);
   const eatIs = [
     "JavaScript",
     "ES6+",
@@ -47,6 +53,15 @@ function AboutProjects() {
     "Google firebase",
     "Redux",
   ];
+  const doneWithIt = [
+    "JavaScript",
+    "ES6+",
+    "React",
+    "React Native",
+    "React context ",
+    "React native notifications",
+    "JWT",
+  ];
   const moshified = ["HTML5", "CSS3", "JavaScript", "ES6+"];
   const fastFood = ["JavaScript", "React", "React Native", "React context"];
   const tenzies = ["HTML5", "CSS3", "JavaScript", "ES6+", "React"];
@@ -55,6 +70,7 @@ function AboutProjects() {
       <h1>Projects</h1>
       <h2 className="about--list-title">Recent</h2>
       <AboutProject
+        link="https://github.com/maxymlyskov/recipe-app"
         title="Eat Is"
         description="Application, that makes it easier stick to your meal schedule.
           Searching with plenty of filters with ability to save it to your
@@ -64,7 +80,8 @@ function AboutProjects() {
         technologies={eatIs}
         children={
           <ReactPlayer
-            width="240px"
+            width={toggle ? "300px" : "240px"}
+            height={toggle ? "620px" : "490px"}
             style={{ margin: "20px" }}
             loop
             url="https://youtu.be/iKK9Rx-DFI4"
@@ -72,6 +89,7 @@ function AboutProjects() {
         }
       />
       <AboutProject
+        link="https://github.com/maxymlyskov/mowee"
         title="Mowee"
         description="With mowee you can search any movie you want, save it to your account,
         find info about it, rate it as well as find a random movie. You can
@@ -79,7 +97,8 @@ function AboutProjects() {
         technologies={mowee}
         children={
           <ReactPlayer
-            width="240px"
+            width={toggle ? "280px" : "240px"}
+            height={toggle ? "620px" : "520px"}
             loop
             style={{ margin: "20px" }}
             url="https://youtu.be/5f1jcnyisEY"
@@ -88,13 +107,14 @@ function AboutProjects() {
       />
       <AboutProject
         title="Vidly"
+        link="https://github.com/maxymlyskov/Vidly"
         description="Vidly is react project, where you can log in, sign up to your account,
         save movie, sort, filter and play with it as with your customers."
         technologies={mowee}
         children={
           <ReactPlayer
-            width="720px"
-            height="168px"
+            width={toggle ? "75%" : "640px"}
+            height={toggle ? "720px" : "168px"}
             loop
             style={{ margin: "20px" }}
             url="https://youtu.be/Mcf1tXGqAgI"
@@ -104,6 +124,7 @@ function AboutProjects() {
 
       <h2 className="about--list-title">Coming soon...</h2>
       <AboutProject
+        link="https://github.com/maxymlyskov/logos"
         title="Logos"
         description="Application, where you can trade and sell any kind of staff you want.
         According to beautiful design, messaging with clients and easy
@@ -122,6 +143,7 @@ function AboutProjects() {
         <>
           <h2 className="about--list-title">Past projects</h2>
           <AboutProject
+            link="https://github.com/maxymlyskov/moshify-html-css"
             title="Moshified"
             description="Moshified is incredibly beautiful website where you can deploy
           your website in less than 60 seconds, host your application with
@@ -130,13 +152,21 @@ function AboutProjects() {
           />
           <AboutProject
             title="FastFood App"
+            link="https://github.com/maxymlyskov/fastfoodapp"
             description="Using fast food app you can find any burger you want from the
           given list of food, use delivery, get details about any meal as
           well as save meals to your personal account. (Only front-end)"
             technologies={fastFood}
           />
           <AboutProject
+            title="DoneWithIt"
+            link="https://github.com/maxymlyskov/DoneWithIt"
+            description="Beautiful marketplace with all the functionality you need to sell and trade all the neccesary items. (Only front-end)"
+            technologies={doneWithIt}
+          />
+          <AboutProject
             title="Tenzies"
+            link="https://github.com/maxymlyskov/tenzies"
             description="Simple web game, where you must unlock all tenzies with the same
           number."
             technologies={tenzies}
