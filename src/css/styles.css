@@ -219,10 +219,13 @@ a:active {
 .img__round {
   border-radius: 50%;
 }
+
 .img__nav {
   width: 8rem;
+
   padding: 2rem 0;
   margin-right: -0.5rem;
+  object-fit: cover;
 }
 @media screen and (min-width: 1024px) {
   .img__nav {

@@ -8,7 +8,7 @@ function AboutWelcome() {
       </h3>
       <div data-aos="zoom-in" className="img__container">
         <img
-          src={require("../../images/nav.jpg")}
+          src={require("../../images/about.jpg")}
           alt="Maxym`s image"
           className="img__round img__about"
         />
