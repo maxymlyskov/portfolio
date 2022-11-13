@@ -3,6 +3,7 @@ import React from "react";
 function AboutWelcome() {
   return (
     <>
+      <h4 className="about--email">lyskovmaxym@gmail.com</h4>
       <h3 data-aos="fade-up" className="about--title">
         Hi, my name is Maxym
       </h3>

@@ -281,6 +281,7 @@ a:active {
   padding: 3rem;
   margin-top: 5rem;
 }
+
 .about-mark-end {
   background: rgb(54, 53, 131);
 }
@@ -417,9 +418,21 @@ a:active {
   margin-top: 3rem;
   margin-left: 1rem;
 }
+.about--email {
+  display: none;
+}
 @media screen and (min-width: 1024px) {
   .about--title-container {
     justify-content: left;
+  }
+  .about--email {
+    display: block;
+    margin: -3rem 5rem;
+    margin-top: 2rem;
+    margin-bottom: -4rem;
+    font-weight: 400;
+    color: rgb(8, 4, 22);
+    text-align: right;
   }
   .img__about {
     width: 35rem;

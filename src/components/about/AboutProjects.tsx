@@ -72,7 +72,7 @@ function AboutProjects() {
       <AboutProject
         link="https://github.com/maxymlyskov/recipe-app"
         title="Eat Is"
-        description="Application, that makes it easier stick to your meal schedule.
+        description="Application, that makes it easier to stick to your meal schedule.
           Searching with plenty of filters with ability to save it to your
           account, where you see all your day needs, calculating daily calories,
           day and week plans, adding notes about your recipe and more is all
@@ -128,7 +128,7 @@ function AboutProjects() {
         title="Logos"
         description="Application, where you can trade and sell any kind of staff you want.
         According to beautiful design, messaging with clients and easy
-        resgistration with your google account Logos makes selling and buying
+        registration with your google account Logos makes selling and buying
         easier."
         technologies={logos}
       />
