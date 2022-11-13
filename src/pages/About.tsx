@@ -13,8 +13,8 @@ function About() {
       <AboutWelcome />
       <AboutSkills />
       <AboutMark
-        title="My passion is make simple, quick and productive code."
-        subTitle="I enjoy improve my knowledge every project I do."
+        title="My passion is making simple, quick and productive code."
+        subTitle="I enjoy improving my knowledge every project I do."
       />
 
       <AboutEducation />
