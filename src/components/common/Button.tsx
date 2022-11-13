@@ -11,7 +11,7 @@ function Button({
   return (
     <button
       {...rest}
-      className="btn btn--secondary btn--block"
+      className="btn btn--secondary btn--block btn--contact"
       onClick={onClick}
     >
       {title}

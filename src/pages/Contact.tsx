@@ -14,7 +14,7 @@ function Contact() {
   return (
     <div className="bg page all grid grid--1x2">
       <div>
-        <h2>Contact me</h2>
+        <h2 data-aos="fade-up">Contact me</h2>
         <form
           action="https://formsubmit.co/lyskovmaxym@gmail.com"
           method="POST"
@@ -45,6 +45,7 @@ function Contact() {
           </div>
 
           <button
+            data-aos="zoom-in"
             className="btn btn--primary btn--outline btn--block btn--large btn--nav"
             type="submit"
           >

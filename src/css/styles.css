@@ -178,6 +178,10 @@ a:active {
     padding: 2rem 9rem;
     margin-top: -20rem;
   }
+  .btn--contact {
+    padding: 2rem 10rem;
+    margin: -2rem 0;
+  }
 }
 /* Navigation Container */
 .nav {

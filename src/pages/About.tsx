@@ -26,11 +26,11 @@ function About() {
       />
 
       <div className="about--end">
-        <h3>
+        <h3 data-aos="zoom-in">
           I am <u>so excited</u> to be hired exactly by you.
         </h3>
-        <Link to="/contact">
-          <Button title="Contact" />
+        <Link data-aos="fade-down" to="/contact">
+          <button className="btn btn--secondary btn--block">Contact</button>
         </Link>
       </div>
       <Footer />

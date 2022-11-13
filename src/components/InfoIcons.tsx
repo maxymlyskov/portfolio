@@ -13,7 +13,7 @@ function InfoIcons() {
     },
   ];
   return (
-    <div className="social-links">
+    <div data-aos="fade-down" className="social-links">
       {((index) => {
         let post = [];
 

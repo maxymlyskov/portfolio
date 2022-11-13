@@ -3,8 +3,10 @@ import React from "react";
 function AboutWelcome() {
   return (
     <>
-      <h3 className="about--title">Hi, my name is Maxym</h3>
-      <div className="img__container">
+      <h3 data-aos="fade-up" className="about--title">
+        Hi, my name is Maxym
+      </h3>
+      <div data-aos="zoom-in" className="img__container">
         <img
           src={require("../../images/nav.jpg")}
           alt="Maxym`s image"

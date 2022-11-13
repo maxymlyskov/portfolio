@@ -31,7 +31,7 @@ function AboutProject({
       </div>
       <AboutTechnologies technologies={technologies} />
       <div className="about--project-video">{children}</div>
-      <h5>{description}</h5>
+      <h5 data-aos="zoom-in">{description}</h5>
     </div>
   );
 }
